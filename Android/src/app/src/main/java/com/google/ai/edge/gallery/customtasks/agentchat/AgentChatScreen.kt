@@ -530,11 +530,11 @@ fun AgentChatScreen(
                   append(". Explore community contributed skills on ")
                   append(
                     buildTrackableUrlAnnotatedString(
-                      url = AgentSkillsURLs.DISCUSSIONS,
+                      url = DerryStrategistURLs.DISCUSSIONS,
                       linkText = "GitHub\u00A0discussions",
                     )
                   )
-                  append(".\n\nTry tapping a sample prompt below to see Agent Skills in action!")
+                  append(".\n\nTry tapping a sample prompt below to see Derry Strategist in action!")
                 },
                 style =
                   MaterialTheme.typography.headlineSmall.copy(fontSize = 16.sp, lineHeight = 22.sp),

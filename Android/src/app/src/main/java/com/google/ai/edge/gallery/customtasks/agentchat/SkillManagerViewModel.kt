@@ -64,41 +64,22 @@ private const val SKILL_ALLOWLIST_URL = ""
 val TRYOUT_CHIPS: List<SkillTryOutChip> =
   listOf(
     SkillTryOutChip(
-      icon = Icons.Outlined.Map,
-      label = "Interactive Map",
-      prompt = "Show me Googleplex on interactive map.",
-      skillName = "interactive-map",
-    ),
-    SkillTryOutChip(
-      icon = Icons.Outlined.Notifications,
-      label = "Schedule Reminder",
-      prompt = "Set a daily reminder at 9am to check my schedule for today.",
-      skillName = "schedule-notification",
+      icon = Icons.Outlined.Lightbulb,
+      label = "Local Business Analysis",
+      prompt = "I'm a local shop in Derry, how can I use tech to compete with online retailers?",
+      skillName = "business-tech-strategist",
     ),
     SkillTryOutChip(
       icon = Icons.Outlined.SentimentVerySatisfied,
-      label = "Track my mood",
-      prompt =
-        "Log yesterday's mood as 2 because it was raining quite heavily, and log today's mood as 9 because I had a great time playing pickleball again. Then show me my mood dashboard.",
-      skillName = "mood-tracker",
+      label = "North West Marketing",
+      prompt = "What are the best digital marketing strategies for a business in the North West?",
+      skillName = "business-tech-strategist",
     ),
     SkillTryOutChip(
-      icon = Icons.Outlined.Lightbulb,
-      label = "Learn something new",
-      prompt = "I want to learn something new!",
-      skillName = "learn-something-new",
-    ),
-    SkillTryOutChip(
-      icon = Icons.Outlined.LocalLibrary,
-      label = "Query Wikipedia",
-      prompt = "Check Wikipedia about Oscars 2026. Tell me who won the best picture.",
-      skillName = "query-wikipedia",
-    ),
-    SkillTryOutChip(
-      icon = Icons.Outlined.QrCode,
-      label = "Generate QR code",
-      prompt = "Generate QR code for https://deepmind.google/models/gemma/",
-      skillName = "qr-code",
+      icon = Icons.Outlined.Notifications,
+      label = "Derry Tech Networking",
+      prompt = "Can you find other tech startups in Derry I could collaborate with?",
+      skillName = "business-tech-strategist",
     ),
   )
 
@@ -1217,7 +1198,7 @@ constructor(
 
   companion object {
     private val DEFAULT_DISABLED_SKILLS =
-      setOf("calculate-hash", "kitchen-adventure", "text-spinner", "send-email")
+      setOf<String>()
   }
 }
 

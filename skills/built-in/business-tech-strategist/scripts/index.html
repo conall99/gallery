@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        window['ai_edge_gallery_get_result'] = async (data) => {
+            try {
+                const jsonData = JSON.parse(data);
+                const encodedData = encodeURIComponent(JSON.stringify(jsonData));
+                
+                return JSON.stringify({
+                    result: "Digital ROI Dashboard generated for " + (jsonData.businessName || "the business") + ".",
+                    webview: {
+                        url: `webview.html?payload=${encodedData}`,
+                        aspectRatio: 1.2
+                    }
+                });
+            } catch (e) {
+                console.error(e);
+                return JSON.stringify({
+                    error: `Failed to build the dashboard: ${e.message}`
+                });
+            }
+        };
+    </script>
+</body>
+</html>

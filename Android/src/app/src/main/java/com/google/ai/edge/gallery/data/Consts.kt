@@ -79,8 +79,8 @@ val SOC =
     })
     .lowercase()
 
-// URLs for Agent Skills.
-object AgentSkillsURLs {
+// URLs for Derry Strategist.
+object DerryStrategistURLs {
   const val REPOSITORY = "https://github.com/google-ai-edge/gallery/tree/main/skills"
   const val DISCUSSIONS = "https://github.com/google-ai-edge/gallery/discussions/categories/skills"
 }

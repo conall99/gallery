@@ -556,7 +556,7 @@ private fun AppTitle(enableAnimation: Boolean) {
   val fontSize = with(LocalDensity.current) { (screenWidthInDp.toPx() * 0.12f).toSp() }
   val titleStyle = homePageTitleStyle.copy(fontSize = fontSize, lineHeight = fontSize)
 
-  // First line text "Google AI" and its animation.
+  // First line text "Derry" and its animation.
   //
   // The animation starts with the first line of text swiping in from left to right, progressively
   // revealing itself in the title color (blue). Then, after a brief delay, the exact same text, but
@@ -736,7 +736,7 @@ private fun TryGm4IntroText(enableAnimation: Boolean) {
   }
 
   Text(
-    "Gemma 4 E2B & E4B are here! Try them in AI Chat, Agent Skills, or the use cases below.",
+    "Gemma 4 E2B & E4B are here! Try them in AI Chat, Derry Strategist, or the use cases below.",
     style = MaterialTheme.typography.bodyMedium,
     modifier =
       Modifier.graphicsLayer {
@@ -869,7 +869,7 @@ private fun TaskList(
           BuiltInTaskId.LLM_CHAT to "Chat with the latest Gemma 4 model today",
           // use "\u00a0" to make sure the word before and after it should always be together when
           // wrapping lines.
-          BuiltInTaskId.LLM_AGENT_CHAT to "Have Gemma 4 complete agentic tasks for\u00A0you",
+          BuiltInTaskId.LLM_AGENT_CHAT to "Empower your business with Derry-specific technology strategy",
         )
       for (task in
         listOf(
@@ -1170,4 +1170,6 @@ private fun getCategoryLabel(context: Context, category: CategoryInfo): String {
     return label
   }
   return context.getString(R.string.category_unlabeled)
+}
+d)
 }

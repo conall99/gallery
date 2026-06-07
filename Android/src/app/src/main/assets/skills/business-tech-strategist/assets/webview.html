@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derry Digital ROI Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+        .gradient-bg { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 p-4 pb-12">
+
+    <!-- Header Section -->
+    <div class="gradient-bg text-white rounded-2xl p-6 mb-6 shadow-xl shadow-blue-200/50">
+        <div class="flex justify-between items-start">
+            <div>
+                <h1 class="text-3xl font-black tracking-tight mb-1" id="ui-biz-name">Client Name</h1>
+                <p class="text-blue-100 text-sm font-bold uppercase tracking-widest opacity-90" id="ui-industry">Industry</p>
+            </div>
+            <div class="bg-white/20 p-2 rounded-lg backdrop-blur-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pitch Section -->
+    <div class="glass rounded-2xl p-6 mb-6 shadow-sm border border-slate-200">
+        <h2 class="text-xs font-black text-blue-600 uppercase tracking-[0.2em] mb-3">Strategic Outreach Hook</h2>
+        <p class="text-slate-700 text-lg leading-relaxed italic font-medium border-l-4 border-blue-500 pl-4" id="ui-hook">
+            Analyzing local Derry market data...
+        </p>
+    </div>
+
+    <!-- Investment Tiers -->
+    <h2 class="text-xl font-black text-slate-800 mb-4 px-1">Investment Roadmaps</h2>
+    <div class="grid gap-4 mb-8">
+        <!-- Seed -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 hover:border-green-300 transition-colors">
+            <div class="flex justify-between items-center mb-3">
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                    <h3 class="font-bold text-slate-800">Efficiency Seed</h3>
+                </div>
+                <span class="bg-green-50 text-green-700 text-xs font-black px-3 py-1 rounded-full border border-green-100">£100-£250</span>
+            </div>
+            <p class="text-sm text-slate-600 leading-normal" id="ui-tier-small">Loading optimizations...</p>
+        </div>
+
+        <!-- Growth -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 hover:border-blue-300 transition-colors">
+            <div class="flex justify-between items-center mb-3">
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                    <h3 class="font-bold text-slate-800">Market Accelerator</h3>
+                </div>
+                <span class="bg-blue-50 text-blue-700 text-xs font-black px-3 py-1 rounded-full border border-blue-100">£500-£1.5k</span>
+            </div>
+            <p class="text-sm text-slate-600 leading-normal" id="ui-tier-medium">Loading growth vectors...</p>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 hover:border-purple-300 transition-colors">
+            <div class="flex justify-between items-center mb-3">
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 rounded-full bg-purple-500"></div>
+                    <h3 class="font-bold text-slate-800">Derry Digital Twin</h3>
+                </div>
+                <span class="bg-purple-50 text-purple-700 text-xs font-black px-3 py-1 rounded-full border border-purple-100">£3k+</span>
+            </div>
+            <p class="text-sm text-slate-600 leading-normal" id="ui-tier-large">Loading ecosystem integration...</p>
+        </div>
+    </div>
+
+    <!-- ROI Estimator -->
+    <div class="bg-slate-900 text-white rounded-3xl p-8 shadow-2xl">
+        <div class="flex items-center gap-3 mb-6">
+            <div class="bg-blue-500/20 p-2 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+            </div>
+            <h2 class="text-xl font-black">Regional ROI Forecaster</h2>
+        </div>
+        
+        <div class="space-y-6 mb-8">
+            <div>
+                <div class="flex justify-between items-end mb-3">
+                    <label class="text-sm font-bold text-slate-400 uppercase tracking-widest">Local Monthly Traffic</label>
+                    <span id="traffic-val" class="text-2xl font-black text-blue-400">750</span>
+                </div>
+                <input type="range" id="traffic-slider" min="100" max="10000" step="100" value="750" 
+                    class="w-full h-3 bg-slate-800 rounded-full appearance-none cursor-pointer accent-blue-500">
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-800">
+                    <p class="text-[10px] font-black text-slate-500 uppercase mb-1">Conv. Rate</p>
+                    <p class="text-lg font-bold text-slate-200" id="ui-conv-rate">5%</p>
+                </div>
+                <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-800">
+                    <p class="text-[10px] font-black text-slate-500 uppercase mb-1">Avg. Sale</p>
+                    <p class="text-lg font-bold text-slate-200" id="ui-avg-sale">£65</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="relative overflow-hidden bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-6 text-center shadow-lg">
+            <div class="relative z-10">
+                <p class="text-xs font-black text-blue-100 uppercase tracking-widest mb-2 opacity-80">Estimated Monthly Revenue Gain</p>
+                <p class="text-5xl font-black text-white" id="roi-result">£2,437</p>
+                <div class="mt-4 flex items-center justify-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                    <p class="text-[10px] text-blue-100 font-bold uppercase tracking-wider">Market Impact Analysis Active</p>
+                </div>
+            </div>
+            <!-- Decorative circle -->
+            <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+        </div>
+        <p class="text-[10px] text-slate-500 mt-4 text-center leading-relaxed">
+            *Based on regional Derry benchmarks. Values are projections for North West SMEs.
+        </p>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const payloadString = urlParams.get('payload');
+
+        let config = {
+            convRate: 0.05,
+            avgSale: 65
+        };
+
+        if (payloadString) {
+            try {
+                const data = JSON.parse(decodeURIComponent(payloadString));
+                
+                document.getElementById('ui-biz-name').textContent = data.businessName || "Local Derry Business";
+                document.getElementById('ui-industry').textContent = data.industry || "Strategic Partner";
+                document.getElementById('ui-hook').textContent = data.hook || "Optimizing for the North West market...";
+                document.getElementById('ui-tier-small').textContent = data.smallTier || "Base efficiency optimizations.";
+                document.getElementById('ui-tier-medium').textContent = data.mediumTier || "Accelerated growth framework.";
+                document.getElementById('ui-tier-large').textContent = data.largeTier || "Full digital ecosystem integration.";
+                
+                if (data.convRate) config.convRate = data.convRate;
+                if (data.avgSale) config.avgSale = data.avgSale;
+
+                document.getElementById('ui-conv-rate').textContent = `${(config.convRate * 100).toFixed(1)}%`;
+                document.getElementById('ui-avg-sale').textContent = `£${config.avgSale}`;
+
+            } catch (e) {
+                console.error("Payload error:", e);
+            }
+        }
+
+        const slider = document.getElementById('traffic-slider');
+        const trafficVal = document.getElementById('traffic-val');
+        const roiResult = document.getElementById('roi-result');
+
+        const updateROI = () => {
+            const traffic = parseInt(slider.value);
+            trafficVal.textContent = traffic.toLocaleString();
+            const revenue = Math.floor(traffic * config.convRate * config.avgSale);
+            roiResult.textContent = `£${revenue.toLocaleString()}`;
+        };
+
+        slider.addEventListener('input', updateROI);
+        updateROI();
+    </script>
+</body>
+</html>

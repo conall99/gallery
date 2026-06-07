@@ -28,8 +28,8 @@
 
 ## Introduction
 
-An Agent Skill is a modular set of capabilities that extends the functional reach of a
-Large Language Model (LLM) within the AI Edge Gallery app. By giving the LLM new
+A Derry Strategist Skill is a modular set of capabilities that extends the functional reach of a
+Large Language Model (LLM) within the Derry Strategist app. By giving the LLM new
 capabilities and domain-specific knowledge, skills reduce the need for
 repetitive prompt instructions, and eliminate the barriers for LLMs to discover
 and integrate new tools dynamically.
@@ -47,7 +47,7 @@ Python scripts or CLI tools, on-device LLMs operate within a sandboxed mobile
 environment. They cannot easily execute arbitrary system commands or local
 scripts due to security and resource constraints.
 
-To overcome this, AI Edge Gallery adapts by focusing on two primary execution
+To overcome this, Derry Strategist adapts by focusing on two primary execution
 paths:
 
 1. **JavaScript Skills**: Running logic inside a lightweight, hidden webview,
@@ -393,7 +393,7 @@ from this list, follow the steps below:
 
 **Steps:**
 
-1. Enter the Agent Skills use case with your selected model, and navigate to the
+1. Enter the Derry Strategist use case with your selected model, and navigate to the
    Skill Manager by tapping the "Skills" chip.
 
 2. Tap the (+) button and select the **Add skill from featured list** option.
@@ -408,7 +408,7 @@ to the app by using the skill url.
 
 **Steps:**
 
-1. Enter the Agent Skills use case with your selected model, and navigate to the
+1. Enter the Derry Strategist use case with your selected model, and navigate to the
    Skill Manager by tapping the "Skills" chip.
 
 2. Tap the (+) button and select the **Load skill from URL** option.
@@ -470,7 +470,7 @@ You can load skills directly from your Android device's file system.
 
 We've created a dedicated **GitHub Discussions** category for users to showcase
 their skills. Follow these steps to share your custom skills with the global
-AI Edge Gallery community:
+Derry Strategist community:
 
 1. Visit [Skills Discussion Category](https://github.com/google-ai-edge/gallery/discussions/categories/skills)
 
@@ -508,72 +508,12 @@ access to real-time console logs.
 
 ## Skill Examples
 
-- [**Kitchen adventure**](built-in/kitchen-adventure)
+- [**Derry Business Technology Strategist**](built-in/business-tech-strategist)
   <br>
-  Act as a dungeon master for a text-based adventure set in a world where
-  everyone is a sentient kitchen appliance
+  Expert technology strategist for small businesses in the Derry region, focused on improving efficiency and driving sales growth.
   <br>![text only](https://img.shields.io/badge/text%20only-777777)
 
-- [**Calculate hash**](built-in/calculate-hash)
-  <br>
-  Calculate the hash of a given text.
-  <br>![JS](https://img.shields.io/badge/JS-0a9396)
-
-- [**Query Wikipedia**](built-in/query-wikipedia)
-  <br>Query summary from Wikipedia for a given topic.
-  <br>
-  ![JS](https://img.shields.io/badge/JS-0a9396)
-  ![API](https://img.shields.io/badge/API-2dc653)
-
-- [**QR code**](built-in/qr-code)
-  <br>
-  Generate QR code for a given url.
-  <br>![JS](https://img.shields.io/badge/JS-0a9396) ![Image](https://img.shields.io/badge/Image-0466c8)
-
-- [**Interactive map**](built-in/interactive-map)
-  <br>
-  Show an interactive map view for the given location.
-  <br>![JS](https://img.shields.io/badge/JS-0a9396) ![Webview](https://img.shields.io/badge/Webview-ee9b00)
-
-- [**Mood tracker**](built-in/mood-tracker)
-  <br>
-  A simple mood tracking skill that stores and visualizes your daily mood and
-  comments.
-  <br>![JS](https://img.shields.io/badge/JS-0a9396) ![Webview](https://img.shields.io/badge/Webview-ee9b00)
-
-- [**Virtual piano**](featured/virtual-piano)
-  <br>Show a virtual piano to play music
-  <br>
-  ![JS](https://img.shields.io/badge/JS-0a9396)
-  ![Webview](https://img.shields.io/badge/Webview-ee9b00)
-
-- [**Text spinner**](built-in/text-spinner)
-  <br>Spin the given text on my head.
-  <br>
-  ![JS](https://img.shields.io/badge/JS-0a9396)
-  ![Webview](https://img.shields.io/badge/Webview-ee9b00)
-  ![Camera](https://img.shields.io/badge/Camera-656d4a)
-
-- [**Mood music**](featured/mood-music)
-  <br>Suggest or play music based on the user's mood, including analyzing images or audio.
-  <br>
-  ![JS](https://img.shields.io/badge/JS-0a9396)
-  ![API](https://img.shields.io/badge/API-2dc653)
-  ![Webview](https://img.shields.io/badge/Webview-ee9b00)
-  ![Secret](https://img.shields.io/badge/Secret-f72585)
-
-- [**Restaurant roulette**](featured/restaurant-roulette)
-  <br>Show a roulette wheel to allow user to randomly select a restaurant based on location and cuisine.
-  <br>
-  ![JS](https://img.shields.io/badge/JS-0a9396)
-  ![API](https://img.shields.io/badge/API-2dc653)
-  ![Webview](https://img.shields.io/badge/Webview-ee9b00)
-  ![Secret](https://img.shields.io/badge/Secret-f72585)
-
-- [**Send email**](built-in/send-email)
-  <br>Send an email.
-  <br>
-  ![Native](https://img.shields.io/badge/Native-f9844a)
 
 Check out more examples from our
 [community-contributed skills](featured).
+).

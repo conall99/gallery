@@ -122,13 +122,13 @@ class AgentChatTask @Inject constructor() : CustomTask {
   override val task: Task =
     Task(
       id = BuiltInTaskId.LLM_AGENT_CHAT,
-      label = "Agent Skills",
+      label = "Derry Strategist",
       category = Category.LLM,
       iconVectorResourceId = R.drawable.agent,
       newFeature = true,
       models = mutableListOf(),
-      description = "Chat with on-device large language models with skills and tools",
-      shortDescription = "Complete agentic tasks with chat",
+      description = "Expert technology strategy and digital audits for Derry small businesses.",
+      shortDescription = "Derry Business Technology Strategist",
       docUrl = "https://github.com/google-ai-edge/LiteRT-LM/blob/main/kotlin/README.md",
       sourceCodeUrl =
         "https://github.com/google-ai-edge/gallery/blob/main/Android/src/app/src/main/java/com/google/ai/edge/gallery/customtasks/agentchat/",
